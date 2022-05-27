@@ -1,0 +1,29 @@
+{
+  "name": "klog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "host"
+    ]
+  },
+  "scripts": {
+    "start": "concurrently \"cd host; npm run start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DSHSB/Klog_Front.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DSHSB/Klog_Front/issues"
+  },
+  "homepage": "https://github.com/DSHSB/Klog_Front#readme",
+  "dependencies": {
+    "concurrently": "^7.2.1"
+  }
+}
