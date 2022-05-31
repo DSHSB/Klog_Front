@@ -6,7 +6,8 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "host"
+      "host",
+      "store"
     ]
   },
   "scripts": {
@@ -25,5 +26,9 @@
   "homepage": "https://github.com/DSHSB/Klog_Front#readme",
   "dependencies": {
     "concurrently": "^7.2.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
   }
 }
