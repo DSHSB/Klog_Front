@@ -7,6 +7,10 @@ export const ProfielEdit = styled.div`
   flex-direction: column;
 
   margin: 70px auto 0px auto;
+
+  .right {
+    text-align: right;
+  }
 `;
 
 export const ImgChangeBox = styled.div`
@@ -26,6 +30,7 @@ export const ImgChangeBox = styled.div`
   }
 
   div {
+    position: relative;
     display: flex;
     flex-direction: column;
 
@@ -51,10 +56,20 @@ export const ImgChangeBox = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
+
+      cursor: pointer;
     }
 
     input[type="file"] {
-      display: none;
+      position: absolute;
+      top: 95px;
+      left: 0;
+      width: 281px;
+      height: 79px;
+      padding: 0;
+      overflow: hidden;
+      border: 0;
+      opacity: 0;
     }
   }
 `;
@@ -63,8 +78,6 @@ export const ChangeBasicImg = styled.button`
   width: 238px;
   height: 34px;
 
-  font-family: "Arial";
-  font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 34px;
@@ -82,10 +95,10 @@ export const ChangeBasicImg = styled.button`
 
 export const TextContainer = styled.div`
   width: 100%;
-  height: 500px;
+  height: auto;
 
-  input,
-  textarea {
+  .name,
+  .introduce {
     width: 100%;
 
     font-family: "Arial";
@@ -108,8 +121,6 @@ export const TextContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-family: "Arial";
-  font-style: normal;
   font-weight: 400;
   font-size: 35px;
   line-height: 40px;
@@ -139,34 +150,93 @@ export const Introduce = styled.textarea`
 
 export const CategoriesContainer = styled.div`
   width: 100%;
-  height: 85px;
-
-  font-family: "Arial";
-  font-style: normal;
+  height: 170px;
 
   color: rgba(0, 0, 0, 0.5);
 
+  background: #ffffff;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+
   input {
+    width: 100%;
+    height: 85px;
+
+    border: none;
+    outline: none;
+
+    padding-left: 42px;
+    padding-right: 42px;
+
     font-weight: 400;
     font-size: 35px;
     line-height: 40px;
 
-    padding-top: 27px;
-
     color: black;
   }
 
-  #selectedCategoriesContainer {
-    background-color: black;
+  .selectedCategoriesContainer {
+    display: flex;
+    align-items: center;
+
+    height: 85px;
 
     font-weight: 700;
     font-size: 25px;
     line-height: 29px;
 
     color: #5077de;
+
+    padding-left: 27px;
   }
 `;
 
-export const selectedCategories = styled.div``;
+export const selectedCategoriesBox = styled.div`
+  display: flex;
+  flex-direction: row;
 
-export const EditButton = styled.button``;
+  width: 155px;
+  height: 57px;
+
+  background: #dfdfdf;
+  border-radius: 15px;
+
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 10px;
+
+  margin-right: 20px;
+`;
+
+export const DeleteCategoriesButton = styled.button`
+  width: 10px;
+  color: #5077de;
+  font-weight: bolder;
+
+  background: none;
+  border: none;
+
+  position: relative;
+  top: -12px;
+
+  cursor: pointer;
+`;
+
+export const EditButton = styled.button`
+  width: 186px;
+  height: 53px;
+
+  background: #5077de;
+  border-radius: 10px;
+
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+
+  margin-top: 40px;
+  border: none;
+
+  color: #ffffff;
+
+  cursor: pointer;
+`;
