@@ -10,6 +10,22 @@ const WriteStyle = styled.div`
     text-align: center;
     font-family: "Arial";
 
+    .header {
+      margin: 0 auto;
+      margin-top: 34px;
+      width: 573px;
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 50px;
+      }
+    }
+
     .title {
       width: 573px;
       font-style: normal;
@@ -93,6 +109,46 @@ const WriteStyle = styled.div`
       h1 {
         font-size: 60px;
       }
+    }
+  }
+  footer {
+    background: #ffffff;
+    box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.1);
+
+    padding-right: 31px;
+
+    width: 50%;
+    height: 67px;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    button {
+      font-family: "Arial";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+
+      border: none;
+      background: #ffffff;
+
+      border-radius: 10px;
+      width: 129px;
+      height: 44px;
+
+      color: #5077de;
+    }
+
+    .blue {
+      color: #ffffff;
+      background: #5077de;
+      box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
     }
   }
 `;
