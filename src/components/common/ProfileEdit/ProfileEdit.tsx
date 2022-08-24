@@ -10,17 +10,25 @@ const ProfileEdit = () => {
         <img src={Kang}></img>
 
         <div>
-          <button>업로드</button>
-          <p>기본 이미지로 변경</p>
+          <label htmlFor="upload">업로드</label>
+          <input id="upload" type="file" />
+
+          <P.ChangeBasicImg>기본 이미지로 변경</P.ChangeBasicImg>
         </div>
       </P.ImgChangeBox>
 
       <P.TextContainer>
-        <h2>사용자 이름</h2>
-        <P.Input></P.Input>
+        <P.Title>사용자 이름</P.Title>
+        <P.UserName id="name"></P.UserName>
 
-        <h2>소개 글</h2>
-        <P.Input></P.Input>
+        <P.Title>소개 글</P.Title>
+        <P.Introduce id="introduce"></P.Introduce>
+
+        <P.Title>관심 분야</P.Title>
+        <P.CategoriesContainer>
+          <input placeholder="카테고리"></input>
+          <div id="selectedCategoriesContainer"></div>
+        </P.CategoriesContainer>
       </P.TextContainer>
     </P.ProfielEdit>
   );
