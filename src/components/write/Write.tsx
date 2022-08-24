@@ -15,7 +15,7 @@ const Write = () => {
     if (textarea) {
       textarea.style.height = "auto";
       let height = textarea.scrollHeight; // 높이
-      textarea.style.height = `${height + 8}px`;
+      textarea.style.height = `${height + 96}px`;
     }
   }, [paper]);
 
