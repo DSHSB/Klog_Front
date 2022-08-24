@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Login from "./components/common/Login";
@@ -9,15 +9,9 @@ import ProfileEdit from "./components/common/ProfileEdit";
 import Write from "./components/write";
 
 const App = () => {
-  const [url, setUrl] = useState("/");
-
-  useEffect(() => {
-    setUrl(window.location.pathname);
-  }, [window.location.href]);
-
   return (
     <BrowserRouter>
-      {url !== "/write" && <Header />}
+      <Header />
       <Routes>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>

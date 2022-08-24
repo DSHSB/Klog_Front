@@ -6,6 +6,7 @@ import Sun from "../../../assets/image/Header/Sun.png";
 import Triangle from "../../../assets/image/Header/Triangle.png";
 
 import Kang from "../../../assets/image/Header/Kang.jpeg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -18,7 +19,9 @@ const Header = () => {
         <H.Btn src={Sun}></H.Btn>
         <H.Btn src={Plus}></H.Btn>
 
-        <H.Write>글쓰기</H.Write>
+        <Link to="/write">
+          <H.Write>글쓰기</H.Write>
+        </Link>
 
         <H.Profile src={Kang}></H.Profile>
         {/* <div className="rel">
