@@ -6,6 +6,7 @@ import Register from "./components/common/Register";
 import Header from "./components/common/Header";
 import Main from "./components/common/Main";
 import ProfileEdit from "./components/common/ProfileEdit";
+import Write from "./components/write";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/register" element={<Register />}></Route>
         <Route path="/" element={<Main />}></Route>
         <Route path="/profile" element={<div>profile</div>}></Route>
+        <Route path="/write" element={<Write />}></Route>
         <Route path="/profile/edit" element={<ProfileEdit />}></Route>
         <Route path="*" element={<div>404</div>}></Route>
       </Routes>
