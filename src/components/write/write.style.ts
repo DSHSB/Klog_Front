@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const WriteStyle = styled.div`
   display: flex;
-  height: 100%;
+  min-height: 100%;
 
   .writing {
     min-height: 100vh;
@@ -45,7 +45,7 @@ const WriteStyle = styled.div`
         align-items: center;
 
         font-weight: 700;
-        font-size: 25px;
+        font-size: 20px;
         color: #5077de;
       }
 
@@ -80,7 +80,7 @@ const WriteStyle = styled.div`
   .markdown--container {
     background: rgba(54, 121, 253, 0.05);
     width: 50%;
-    height: 100vh;
+    min-height: 100vh;
 
     .markdown {
       padding: 50px;

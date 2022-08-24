@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import WriteStyle from "./write.style";
 
@@ -8,20 +8,23 @@ const Write = () => {
   const [keyword, setKeyword] = useState<string[]>([]);
   const keyRef = useRef<any>();
 
-  const changePaper = useCallback(
-    (e: any) => {
-      setPaper(e.target.value);
-      console.log(paper);
-    },
-    [paper]
-  );
+  useEffect(() => {
+    let textarea = document.getElementById("autoTextarea");
 
-  const changeTitle = useCallback(
-    (e: any) => {
-      setTitle(e.target.value);
-    },
-    [title]
-  );
+    if (textarea) {
+      textarea.style.height = "auto";
+      let height = textarea.scrollHeight; // 높이
+      textarea.style.height = `${height + 8}px`;
+    }
+  }, [paper]);
+
+  const changePaper = useCallback((e: any) => {
+    setPaper(e.target.value);
+  }, []);
+
+  const changeTitle = useCallback((e: any) => {
+    setTitle(e.target.value);
+  }, []);
 
   const checkEnter = useCallback(
     (e: any) => {
@@ -55,7 +58,11 @@ const Write = () => {
           />
         </div>
         <div className="header"></div>
-        <textarea placeholder="끄적끄적..." onChange={changePaper}></textarea>
+        <textarea
+          id="autoTextarea"
+          placeholder="끄적끄적..."
+          onChange={changePaper}
+        ></textarea>
       </div>
       <div className="markdown--container">
         <div className="markdown">
