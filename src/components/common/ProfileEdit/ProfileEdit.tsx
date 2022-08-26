@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as P from "./ProfileEdit.style";
 
 import Kang from "../../../assets/image/Header/Kang.jpeg";
 
 const ProfileEdit = () => {
+  const [text, setText] = useState("");
   const [categories, setCategories] = useState(["frontend", "backend"]);
 
   let makeCategories = categories.map((categories, i) => {
@@ -14,6 +15,17 @@ const ProfileEdit = () => {
       </P.selectedCategoriesBox>
     );
   });
+
+  const inputKey = (e: any) => {
+    setText(e.target.value);
+  };
+
+  const checkEnter = (event: { key: string }) => {
+    if (event.key === "Enter") {
+      setCategories((categories) => [...categories, text]);
+      setText("");
+    }
+  };
 
   return (
     <P.ProfielEdit>
@@ -37,7 +49,13 @@ const ProfileEdit = () => {
 
         <P.Title>관심 분야</P.Title>
         <P.CategoriesContainer>
-          <input placeholder="카테고리"></input>
+          <input
+            placeholder="카테고리"
+            type="text"
+            onChange={inputKey}
+            onKeyDown={checkEnter}
+            value={text}
+          ></input>
           <div className="selectedCategoriesContainer">{makeCategories}</div>
         </P.CategoriesContainer>
       </P.TextContainer>

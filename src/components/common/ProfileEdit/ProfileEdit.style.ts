@@ -45,8 +45,6 @@ export const ImgChangeBox = styled.div`
       background: #5077de;
       border-radius: 10px;
 
-      font-family: "Arial";
-      font-style: normal;
       font-weight: 400;
       font-size: 40px;
       line-height: 46px;
@@ -56,8 +54,6 @@ export const ImgChangeBox = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-
-      cursor: pointer;
     }
 
     input[type="file"] {
@@ -70,6 +66,8 @@ export const ImgChangeBox = styled.div`
       overflow: hidden;
       border: 0;
       opacity: 0;
+
+      cursor: pointer;
     }
   }
 `;

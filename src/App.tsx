@@ -6,7 +6,7 @@ import Register from "./components/common/Register";
 import Header from "./components/common/Header";
 import Main from "./components/common/Main";
 import ProfileEdit from "./components/common/ProfileEdit";
-import Write from "./components/write";
+import Write from "./components/common/write";
 
 const App = () => {
   return (
