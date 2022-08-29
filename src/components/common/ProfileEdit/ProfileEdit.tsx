@@ -1,32 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import * as P from "./ProfileEdit.style";
+import Interest from "./fieldOfInterest/Interest";
 
 import Kang from "../../../assets/image/Header/Kang.jpeg";
 
 const ProfileEdit = () => {
-  const [text, setText] = useState("");
-  const [categories, setCategories] = useState(["frontend", "backend"]);
-
-  let makeCategories = categories.map((categories, i) => {
-    return (
-      <P.selectedCategoriesBox key={i}>
-        {categories}
-        <P.DeleteCategoriesButton>X</P.DeleteCategoriesButton>
-      </P.selectedCategoriesBox>
-    );
-  });
-
-  const inputKey = (e: any) => {
-    setText(e.target.value);
-  };
-
-  const checkEnter = (event: { key: string }) => {
-    if (event.key === "Enter") {
-      setCategories((categories) => [...categories, text]);
-      setText("");
-    }
-  };
-
   return (
     <P.ProfielEdit>
       <P.ImgChangeBox>
@@ -47,17 +25,7 @@ const ProfileEdit = () => {
         <P.Title>소개 글</P.Title>
         <P.Introduce className="introduce"></P.Introduce>
 
-        <P.Title>관심 분야</P.Title>
-        <P.CategoriesContainer>
-          <input
-            placeholder="카테고리"
-            type="text"
-            onChange={inputKey}
-            onKeyDown={checkEnter}
-            value={text}
-          ></input>
-          <div className="selectedCategoriesContainer">{makeCategories}</div>
-        </P.CategoriesContainer>
+        <Interest />
       </P.TextContainer>
 
       <div className="right">

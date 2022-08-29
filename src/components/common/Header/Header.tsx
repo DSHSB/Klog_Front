@@ -13,7 +13,7 @@ import WhiteTraingle from "../../../assets/image/Header/WhiteTraingle.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  let [clickCnt, setClickCnt] = useState(true);
+  let [clickCnt, setClickCnt] = useState(false);
 
   const popup = () => {
     setClickCnt(!clickCnt);
