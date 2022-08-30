@@ -108,36 +108,16 @@ const Write = () => {
           />
         </div>
         <div className="header">
-          <div className="h1" onClick={() => simpleStruct("h1")}>
-            1
-          </div>
-          <div className="h2" onClick={() => simpleStruct("h2")}>
-            2
-          </div>
-          <div className="h3" onClick={() => simpleStruct("h3")}>
-            3
-          </div>
-          <div className="h4" onClick={() => simpleStruct("h4")}>
-            4
-          </div>
-          <div className="bold" onClick={() => simpleStruct("bold")}>
-            5
-          </div>
-          <div className="italic" onClick={() => simpleStruct("italic")}>
-            6
-          </div>
-          <div className="pre" onClick={() => simpleStruct("pre")}>
-            6
-          </div>
-          <div className="link" onClick={() => simpleStruct("link")}>
-            7
-          </div>
-          <div className="img" onClick={() => simpleStruct("img")}>
-            8
-          </div>
-          <div className="code" onClick={() => simpleStruct("code")}>
-            9
-          </div>
+          <div className="h1" onClick={() => simpleStruct("h1")}></div>
+          <div className="h2" onClick={() => simpleStruct("h2")}></div>
+          <div className="h3" onClick={() => simpleStruct("h3")}></div>
+          <div className="h4" onClick={() => simpleStruct("h4")}></div>
+          <div className="bold" onClick={() => simpleStruct("bold")}></div>
+          <div className="italic" onClick={() => simpleStruct("italic")}></div>
+          <div className="pre" onClick={() => simpleStruct("pre")}></div>
+          <div className="link" onClick={() => simpleStruct("link")}></div>
+          <div className="img" onClick={() => simpleStruct("img")}></div>
+          <div className="code" onClick={() => simpleStruct("code")}></div>
         </div>
         <textarea
           id="autoTextarea"
