@@ -12,4 +12,7 @@ code {
 
 * {
   box-sizing: border-box;
+
+  font-family: "Arial";
+  font-style: normal;
 }

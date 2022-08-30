@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import BlueTraingle from "../../../assets/image/Header/BlueTriangle.png";
+import WhiteTraingle from "../../../assets/image/Header/WhiteTraingle.png";
 
 export const Header = styled.div`
   width: 100%;
@@ -100,7 +102,7 @@ export const Write = styled.button`
   }
 `;
 
-export const Triangle = styled.img`
+export const Triangle = styled.button`
   width: 18px;
   height: 18px;
 
@@ -108,11 +110,17 @@ export const Triangle = styled.img`
 
   /* transform: rotate(-180deg); */
 
+  background-image: url(${BlueTraingle});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: white;
+
   border: none;
 
-  :hover {
-    cursor: pointer;
-  }
+  cursor: pointer;
+
+  position: relative;
 `;
 
 export const PopUp = styled.div`
@@ -132,4 +140,64 @@ export const PopUp = styled.div`
   }
 `;
 
-export const PopUpBtn = styled.button``;
+export const PopUpContainer = styled.div`
+  width: 145px !important;
+  height: 188px !important;
+
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 50px;
+  left: -90px;
+
+  background: #ffffff;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+`;
+
+export const PopUpButtonContainer = styled.button`
+  height: 47px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: none;
+
+  cursor: pointer;
+
+  img {
+    height: 24px;
+    width: 24px;
+  }
+
+  h4 {
+    width: 60px;
+    height: 17px;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+
+    margin-left: 30px;
+
+    color: #000000;
+  }
+`;
+
+export const PopUpTraingle = styled.img`
+  width: 25px;
+  height: 25px;
+
+  /* background-image: url(${WhiteTraingle});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: white; */
+
+  position: absolute;
+  top: -25px;
+  left: 87px;
+`;

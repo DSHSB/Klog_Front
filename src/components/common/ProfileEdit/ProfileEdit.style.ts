@@ -7,6 +7,10 @@ export const ProfielEdit = styled.div`
   flex-direction: column;
 
   margin: 70px auto 0px auto;
+
+  .right {
+    text-align: right;
+  }
 `;
 
 export const ImgChangeBox = styled.div`
@@ -26,6 +30,7 @@ export const ImgChangeBox = styled.div`
   }
 
   div {
+    position: relative;
     display: flex;
     flex-direction: column;
 
@@ -40,8 +45,6 @@ export const ImgChangeBox = styled.div`
       background: #5077de;
       border-radius: 10px;
 
-      font-family: "Arial";
-      font-style: normal;
       font-weight: 400;
       font-size: 40px;
       line-height: 46px;
@@ -54,7 +57,17 @@ export const ImgChangeBox = styled.div`
     }
 
     input[type="file"] {
-      display: none;
+      position: absolute;
+      top: 95px;
+      left: 0;
+      width: 281px;
+      height: 79px;
+      padding: 0;
+      overflow: hidden;
+      border: 0;
+      opacity: 0;
+
+      cursor: pointer;
     }
   }
 `;
@@ -63,8 +76,6 @@ export const ChangeBasicImg = styled.button`
   width: 238px;
   height: 34px;
 
-  font-family: "Arial";
-  font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 34px;
@@ -82,10 +93,10 @@ export const ChangeBasicImg = styled.button`
 
 export const TextContainer = styled.div`
   width: 100%;
-  height: 500px;
+  height: auto;
 
-  input,
-  textarea {
+  .name,
+  .introduce {
     width: 100%;
 
     font-family: "Arial";
@@ -108,8 +119,6 @@ export const TextContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-family: "Arial";
-  font-style: normal;
   font-weight: 400;
   font-size: 35px;
   line-height: 40px;
@@ -137,36 +146,21 @@ export const Introduce = styled.textarea`
   resize: none;
 `;
 
-export const CategoriesContainer = styled.div`
-  width: 100%;
-  height: 85px;
+export const EditButton = styled.button`
+  width: 186px;
+  height: 53px;
 
-  font-family: "Arial";
-  font-style: normal;
+  background: #5077de;
+  border-radius: 10px;
 
-  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
 
-  input {
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 40px;
+  margin-top: 40px;
+  border: none;
 
-    padding-top: 27px;
+  color: #ffffff;
 
-    color: black;
-  }
-
-  #selectedCategoriesContainer {
-    background-color: black;
-
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 29px;
-
-    color: #5077de;
-  }
+  cursor: pointer;
 `;
-
-export const selectedCategories = styled.div``;
-
-export const EditButton = styled.button``;
