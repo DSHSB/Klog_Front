@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import headerImage from "../../assets/image/Write/header.png";
 
 const WriteStyle = styled.div`
   display: flex;
@@ -23,6 +24,57 @@ const WriteStyle = styled.div`
         align-items: center;
 
         width: 50px;
+      }
+
+      .h1 {
+        background: url(${headerImage});
+        height: 42px;
+        background-position: 10px 0px;
+      }
+      .h2 {
+        background: url(${headerImage});
+        height: 42px;
+        background-position: 9% 0px;
+      }
+      .h3 {
+        background: url(${headerImage});
+        height: 42px;
+        background-position: 18% 0px;
+      }
+      .h4 {
+        background: url(${headerImage});
+        height: 42px;
+        background-position: 27% 0px;
+      }
+      .bold {
+        background: url(${headerImage});
+        height: 42px;
+        background-position: 36% -1px;
+      }
+      .italic {
+        background: url(${headerImage});
+        height: 42px;
+        background-position: 48% -1px;
+      }
+      .pre {
+        background: url(${headerImage});
+        height: 42px;
+        background-position: 60% -1px;
+      }
+      .link {
+        background: url(${headerImage});
+        height: 42px;
+        background-position: 71% -3px;
+      }
+      .img {
+        background: url(${headerImage});
+        height: 42px;
+        background-position: 81% -3px;
+      }
+      .code {
+        background: url(${headerImage});
+        height: 42px;
+        background-position: 90% -3px;
       }
     }
 
