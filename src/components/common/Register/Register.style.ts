@@ -14,28 +14,35 @@ export const Img = styled.img`
   width: 720px;
 `;
 
-export const RegisterContainer = styled.div`
+export const RegisterContainer = styled.form`
   width: 720px;
 
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: 400;
-  color: #000000;
-
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  h3 {
+  h2 {
     font-weight: 700;
     font-size: 40px;
     line-height: 46px;
 
-    text-align: left;
-    margin-left: 80px;
+    margin-top: 52px;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+
+    margin-top: 26px;
+    margin-bottom: 19px;
   }
 
   a {
+    width: 104px;
+    height: 18px;
+
+    display: flex;
+
+    margin-left: 455px;
+    margin-top: 10px;
+
     font-size: 16px;
     line-height: 18px;
 
@@ -43,95 +50,100 @@ export const RegisterContainer = styled.div`
 
     text-decoration: none;
 
-    font-size: 16px;
-  }
+    cursor: pointer;
 
-  p {
-    font-size: 30px;
-    line-height: 34px;
-
-    text-align: left;
-    margin-left: 80px;
-  }
-
-  .register {
-    text-align: end;
-
-    margin-top: 26px;
-    margin-right: 80px;
+    :hover {
+      color: skyblue;
+      transition: 0.5s;
+    }
   }
 `;
 
 export const Input = styled.input`
-  width: 554px;
+  width: 552px;
   height: 69px;
 
-  background: #ffffff;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 
-  outline: none;
   border: none;
+  outline: none;
 
   font-size: 35px;
 
   padding-left: 20px;
 `;
 
-export const Btn = styled.button`
+export const MailContainer = styled.div`
   width: 554px;
   height: 69px;
 
-  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  input {
+    width: 438px;
+    height: 69px;
+
+    font-size: 35px;
+
+    padding-left: 20px;
+
+    border-radius: 10px;
+
+    border: none;
+    outline: none;
+  }
+
+  button {
+    width: 116px;
+    height: 52px;
+
+    background-color: #379fff;
+    border-radius: 15px;
+    border: none;
+
+    color: white;
+
+    margin-right: 10px;
+    margin-left: 10px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    cursor: pointer;
+    :hover {
+      background-color: skyblue;
+      transition: 0.5s;
+    }
+  }
+`;
+
+export const RegisterButton = styled.button`
+  width: 554px;
+  height: 69px;
 
   background: #5077de;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
-
   border-radius: 10px;
   border: none;
 
   margin-top: 75px;
 
+  font-weight: 400;
   font-size: 25px;
+  line-height: 29px;
 
+  color: white;
+
+  cursor: pointer;
   :hover {
-    cursor: pointer;
-
-    transition: 0.5s;
     background-color: skyblue;
-  }
-`;
-
-export const CertifiedBtn = styled.button`
-  width: 116px;
-  height: 52px;
-
-  background: #379fff;
-  border-radius: 15px;
-
-  border: none;
-
-  font-size: 30px;
-  :hover {
-    cursor: pointer;
-
     transition: 0.5s;
-    background-color: skyblue;
   }
-`;
-
-export const Email = styled.input`
-  width: 554px;
-  height: 69px;
-
-  background: #ffffff;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-
-  outline: none;
-  border: none;
-
-  font-size: 35px;
-
-  padding-left: 20px;
 `;

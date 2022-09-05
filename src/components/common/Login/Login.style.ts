@@ -46,6 +46,11 @@ export const LoginContainer = styled.div`
     text-decoration: none;
 
     font-size: 16px;
+
+    :hover {
+      color: skyblue;
+      transition: 0.5s;
+    }
   }
 
   p {
