@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import headerImage from "../../../assets/image/Write/Header.png";
+import headerImage from "../../../assets/image/Write/header.png";
 
 const WriteStyle = styled.div`
   display: flex;

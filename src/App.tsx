@@ -7,7 +7,8 @@ import Header from "./components/common/Header";
 import Main from "./components/common/Main";
 import Write from "./components/common/write";
 import ProfileEdit from "./components/common/ProfileEdit/ProfileEdit";
-import Profile from "./components/common/Profile";
+import WriteList from "./components/common/Profile";
+import Post from "./components/common/Post";
 
 const App = () => {
   return (
@@ -17,9 +18,11 @@ const App = () => {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/" element={<Main />}></Route>
-        <Route path="/profile" element={<Profile />}></Route>
         <Route path="/write" element={<Write />}></Route>
         <Route path="/profile/edit" element={<ProfileEdit />}></Route>
+
+        <Route path="/profile/writeList" element={<WriteList />}></Route>
+        <Route path="/post/:id" element={<Post />}></Route>
         <Route path="*" element={<div>404</div>}></Route>
       </Routes>
     </BrowserRouter>
