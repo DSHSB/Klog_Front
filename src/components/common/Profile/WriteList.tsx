@@ -4,6 +4,7 @@ import * as P from "./WriteList.style";
 import Kang from "../../../assets/image/Profile/Kang.jpeg";
 import Search from "../../../assets/image/Profile/Search.png";
 import IMG from "../../../assets/image/LoginAndRegister/LeeOneStar.png";
+import LOVE from "../../../assets/image/WriteList/Vector.png";
 
 let writelst = [
   {
@@ -20,7 +21,7 @@ const WriteList = () => {
   const makeList = writelst.map((i, idx) => {
     return (
       <P.Write key={idx}>
-        <img src={i.img} />
+        <img src={IMG} />
         <h2>{i.title}</h2>
         <p>{i.content}</p>
         <P.CategoriesList>
@@ -29,7 +30,7 @@ const WriteList = () => {
           })}
         </P.CategoriesList>
         <P.InfoContainer>
-          {i.date} <img src="../../../assets/image/WriteList/Vector.png" /> {i.love}
+          {i.date} <img src={LOVE} /> {i.love}
         </P.InfoContainer>
       </P.Write>
     );
