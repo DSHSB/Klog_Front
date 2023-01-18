@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Profile = styled.div`
+  height: 10000px;
+
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -90,8 +92,14 @@ export const PostList = styled.div`
 `;
 
 export const Write = styled.div`
+  font-family: "Arial";
+  font-style: normal;
+
+  background-color: beige;
+  border-radius: 20px;
+
   width: 100%;
-  height: 1080px;
+  height: 900px;
 
   display: flex;
   flex-direction: column;
@@ -102,13 +110,84 @@ export const Write = styled.div`
 
     overflow: hidden;
   }
+
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    width: 100%;
+    overflow-x: hidden;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+
+    color: #000000;
+  }
+
+  p {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "K2D";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    /* identical to box height */
+
+    color: #000000;
+  }
 `;
 
 export const CategoriesList = styled.div`
   display: flex;
-
+  margin-top: 30px;
+  margin-bottom: 0px;
   div {
   }
 `;
 
-export const InfoContainer = styled.div``;
+export const InfoContainer = styled.div`
+  display: flex;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 25px;
+  color: black;
+
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  img {
+    margin-right: 20px;
+    margin-left: 50px;
+    height: 40px;
+    width: 40px;
+  }
+`;
+
+export const CategoriesBox = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  /* width: 155px; */
+  /* width: calc(auto + 20px); */
+  min-width: 155px;
+  height: 57px;
+
+  background: #dfdfdf;
+  border-radius: 15px;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 20px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+
+  color: #5077de;
+
+  /* cursor: pointer; */
+`;

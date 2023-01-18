@@ -8,8 +8,8 @@ import IMG from "../../../assets/image/LoginAndRegister/LeeOneStar.png";
 let writelst = [
   {
     img: "../../../assets/image/LoginAndRegister/LeeOneStar.png",
-    title: "강성훈이 한별이를 좋아하는 이유",
-    content: "강성훈이 한별이하고 하는 행동들을 알아보아요",
+    title: "강성훈이 이한별을 좋아하는 이유",
+    content: "강성훈이 이한별과 함께 하는 행동들을 알아보아요",
     categories: ["frontend", "backend"],
     date: "2021-05-31",
     love: "123",
@@ -25,10 +25,12 @@ const WriteList = () => {
         <p>{i.content}</p>
         <P.CategoriesList>
           {i.categories.map((i, idx) => {
-            return <div>{i}</div>;
+            return <P.CategoriesBox key={idx}>{i}</P.CategoriesBox>;
           })}
         </P.CategoriesList>
-        <P.InfoContainer>2</P.InfoContainer>
+        <P.InfoContainer>
+          {i.date} <img src="../../../assets/image/WriteList/Vector.png" /> {i.love}
+        </P.InfoContainer>
       </P.Write>
     );
   });
