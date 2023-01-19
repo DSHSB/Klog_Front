@@ -15,6 +15,38 @@ let writelst = [
     date: "2021-05-31",
     love: "123",
   },
+  {
+    img: "../../../assets/image/LoginAndRegister/LeeOneStar.png",
+    title: "강성훈이 이한별을 좋아하는 이유",
+    content: "강성훈이 이한별과 함께 하는 행동들을 알아보아요",
+    categories: ["frontend", "backend"],
+    date: "2021-05-31",
+    love: "123",
+  },
+  {
+    img: "../../../assets/image/LoginAndRegister/LeeOneStar.png",
+    title: "강성훈이 이한별을 좋아하는 이유",
+    content: "강성훈이 이한별과 함께 하는 행동들을 알아보아요",
+    categories: ["frontend", "backend"],
+    date: "2021-05-31",
+    love: "123",
+  },
+  {
+    img: "../../../assets/image/LoginAndRegister/LeeOneStar.png",
+    title: "강성훈이 이한별을 좋아하는 이유",
+    content: "강성훈이 이한별과 함께 하는 행동들을 알아보아요",
+    categories: ["frontend", "backend"],
+    date: "2021-05-31",
+    love: "123",
+  },
+  {
+    img: "../../../assets/image/LoginAndRegister/LeeOneStar.png",
+    title: "강성훈이 이한별을 좋아하는 이유",
+    content: "강성훈이 이한별과 함께 하는 행동들을 알아보아요",
+    categories: ["frontend", "backend"],
+    date: "2021-05-31",
+    love: "123",
+  },
 ];
 
 const WriteList = () => {

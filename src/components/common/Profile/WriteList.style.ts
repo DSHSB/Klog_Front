@@ -50,7 +50,7 @@ export const ProfileIntroduceContainer = styled.div`
 
 export const SearchContainer = styled.div`
   height: 69px;
-  width: 80%;
+  width: 70%;
   display: flex;
   align-items: center;
 
@@ -85,7 +85,7 @@ export const SearchContainer = styled.div`
 `;
 
 export const PostList = styled.div`
-  width: 80%;
+  width: 60%;
   height: auto;
 
   margin-top: 80px;
@@ -95,11 +95,12 @@ export const Write = styled.div`
   font-family: "Arial";
   font-style: normal;
 
-  background-color: beige;
+  /* background-color: beige; */
   border-radius: 20px;
 
   width: 100%;
   height: 900px;
+  margin-bottom: 50px;
 
   display: flex;
   flex-direction: column;
