@@ -80,3 +80,15 @@ export const MarkdownContainer = styled.div`
     height: 590px;
   }
 `;
+
+export const WriterInfo = styled.div`
+  width: auto;
+  display: flex;
+
+  img {
+    h3 {
+    }
+    p {
+    }
+  }
+`;

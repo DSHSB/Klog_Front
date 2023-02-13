@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Profile = styled.div`
-  height: 10000px;
+  height: auto;
 
   width: 100%;
   display: flex;
@@ -10,16 +10,17 @@ export const Profile = styled.div`
 `;
 
 export const ProfileIntroduceContainer = styled.div`
-  width: 85%;
+  width: 70%;
 
   display: flex;
-  justify-content: center;
-
-  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
 
   margin-top: 176px;
 
   img {
+    min-width: 100px;
+    min-height: 100px;
     width: 300px;
     height: 300px;
 
@@ -77,6 +78,7 @@ export const SearchContainer = styled.div`
   img {
     margin-left: 10px;
     margin-right: 10px;
+
     width: 45px;
     height: 45px;
 
@@ -95,7 +97,7 @@ export const Write = styled.div`
   font-family: "Arial";
   font-style: normal;
 
-  /* background-color: beige; */
+  background-color: #f1f1f1;
   border-radius: 20px;
 
   width: 100%;

@@ -37,6 +37,7 @@ const Post = () => {
             </div>
           </div>
         </P.MarkdownContainer>
+        <P.WriterInfo></P.WriterInfo>
       </P.Post>
     </P.PostContainer>
   );
