@@ -81,6 +81,7 @@ export const WriterInfo = styled.div`
   width: auto;
   /* height: 315px; */
   margin-top: 100px;
+  margin-bottom: 30px;
 
   display: flex;
   flex-direction: column;
@@ -116,7 +117,7 @@ export const WriterInfo = styled.div`
 
 export const ConnectIconContaier = styled.div`
   display: flex;
-
+  margin-top: 10px;
   img {
     width: 50px;
     height: 50px;
